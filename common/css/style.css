@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/*start plan*/
+.plan--wrapper {
+    background:#e1e9f2;
+    padding-bottom:60px;
+}
+.plan--wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.planItem img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.planItem__text a {
+    font-size: 17px;
+    display: block;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.planItem__text span {
+    font-size: 14px;
+    display: block;
+    color: #888888;
+    text-transform: capitalize;
+    text-align: left;
+}
+.plan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    float: left;
+}
+.planItem {
+    width: 24%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    background: white;
+    border: 2px solid #17589c;
+    margin-bottom: 14px;
+    height: 110px;
+    transition:0.5s;
+    border-radius: 10px;
+}
+.planItem:hover{
+    background:#006df0;
+    color:white;
+}
+.planItem:hover .planItem__text span{
+    color:white;
+}
+.planItem:hover path{
+    fill:white !important;
+}
+/* .plan__img {
+    height: 320px;
+    width: 20%;
+    object-fit: contain;
+    float: left;
+} */
+@media (min-width:768px) and (max-width:991px){
+    .plan--wrapper{
+        flex-direction: column;
+    }
+    .plan{
+        width: 100%;
+    }
+    .plan__img{
+        display: none;
+    }
+}
+@media only screen and (max-width:767px){
+    .planItem {
+        width: 49%;
+    }
+    .plan{
+        width: 100%;
+    }
+    .plan__img{
+        display: none
+    }
+    .mainImg img{
+       height: auto !important;
+    }
+    .section__bigTitle{
+        font-size: 35px !important;
+        line-height: 1.5 !important;
+    }
+    .imfo--inner{
+        flex-direction: column
+    }
+    .imfo--inner img{
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+/*end plan*/
+
+/*start mainImg*/
+.mainImg img{
+    max-width: 100%;
+    width: 100%;
+}
+.mainImg {
+    margin-bottom: 70px;
+}
+/*end mainImg*/
+
+
+/*start section*/
+.section{
+    text-align: center;
+}
+.sectionItem {
+    width: 25%;
+    padding: 10px;
+}
+.sectionItem:not(:last-child){
+    border-right: 1px solid #D0D0D0;
+}
+.section__text {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+.section__tit {
+    font-size: 25px;
+    line-height: 2;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+}
+.section__box {
+    display: flex;
+    padding: 100px 0;
+}
+.section__bigTitle{
+    font-size: 50px;
+    line-height: 72px;
+    letter-spacing: -0.6px;
+    font-weight: 300;
+}
+.section__smallTitle{
+    font-size: 32px;
+    line-height: 60px;
+    letter-spacing: -0.3px;
+    font-weight: 300;
+}
+.section__number{
+    font-size: 50px;
+    font-weight: 300;
+    color: #006df0;
+}
+@media  only screen and (min-width:992px){
+.whyLoveMe__item:hover .whyLoveMe__text{
+    opacity: 1;
+    display: block !important;
+    color: white;
+}
+}
+@media (min-width: 768px) and (max-width:991px){
+    .section__tit{
+        font-size: 20px;
+    }
+    .section__text{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:767px){
+    .section__box{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .sectionItem{
+        width: 100%;
+        border-right: none !important;
+    }
+    .sectionItem:not(:last-child){
+        border-bottom: 1px solid #D0D0D0;
+    }
+}
+/*end section*/
+
+/*start imfo*/
+.imfo--inner img{
+    float: left;
+}
+.imfo--wrapper {
+    background-color: #f4f4f4;
+}
+.imfo--inner {
+    /* display: flex; */
+    align-items: center;
+    padding: 18px 0;
+    flex-wrap: wrap;
+}
+.imfo--inner a{
+    width:14%
+}
+.imfo--inner img{
+    width:100%;
+}
+/*end imfo*/
+
+/*whyLoveMe*/
+.whyLoveMe__table {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.whyLoveMe__slogan{
+    font-size: 50px;
+    line-height: 72px;
+    font-weight: 300;
+    text-align: center;
+    padding: 25px 0;
+}
+.whyLoveMe {
+    margin-bottom: 90px;
+}
+.whyLoveMe__table:after,.imfo--inner::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.whyLoveMe__item{
+    width: 33.333333%;
+    text-align: center;
+    padding: 32px;
+    position: relative;
+    background: #17589c;
+    /* margin-bottom: 15px; */
+}
+.whyLoveMe__item span{
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+}
+.whyLoveMe__item{
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+}
+.whyLoveMe__item:nth-child(7),.whyLoveMe__item:nth-child(8),.whyLoveMe__item:nth-child(9){
+    border-bottom:none;
+}
+.whyLoveMe__item:nth-child(3),.whyLoveMe__item:nth-child(6),.whyLoveMe__item:nth-child(9){
+    border-right:none;
+}
+.whyLoveMe__text{
+    font-size: 15px;
+    line-height: 26px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    background: #32a3f7;
+    height: 100%;
+    color:#fff;
+    padding: 31px 32px;
+    opacity:0;
+    display: block;
+}
+.removeIcon{
+    display: block;
+}
+@media only screen and (max-width:767px){
+    .whyLoveMe__table{
+        flex-direction: column;
+    }
+    .whyLoveMe__item img{
+        float: left;
+        margin-right: 10px;
+
+    }
+    .whyLoveMe__item::after{
+        font-family: FontAwesome;
+        content:"\f107 ";
+        position: absolute;
+        font-size: 20px;
+        right:20px;
+        top:50%;
+        color:white;
+        transform: translateY(-50%)
+    }
+    .whyLoveMe__item:first-child{
+        border-top:1px solid #D0D0D0
+    }
+    .whyLoveMe__item{
+        width: 100%;
+        border-bottom: 1px solid #D0D0D0 !important;
+        text-align: left;
+        padding: 10px 30px 10px 10px;
+        border-right: none;
+    }
+    .whyLoveMe__text {
+        position: static;
+        color: #fff;
+        opacity: 1;
+        background: none;
+        padding:0;
+        top:0;
+        left: 0;
+        transform: translate(0);
+    }
+    .whyLoveMe__text:hover{
+        color:#9a9696
+    }
+    .whyLoveMe{
+        padding: 0 15px;
+    }
+    .whyLoveMe__slogan{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+}
+/*end whyLoveMe*/
+
+/*mainText*/
+.mainText{
+    text-align: center;
+    padding: 30px;
+}
+.mainText h1{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #2f3842;
+    margin: 0;
+}
+.mainText p{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #2f3842;
+    margin-bottom: 20px;
+}
+/* /end/ mainText*/
+
+/*contact*/
+.contact{
+    border-bottom:1px solid #1ca0a4;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+}
+.contact h2{
+    font-size: 30px;
+    color:#fff;
+    font-weight: 600;
+    display: inline-block;
+    background: #17589c;
+    padding: 6px 30px;
+    margin-bottom: 20px;
+    box-shadow: 10px 7px 0 #1ca0a4;
+}
+.contact--inner{
+    display: flex;
+    margin-bottom: 10px;
+}
+.contact--inner .left{
+    width: 45%;
+    border-right: 1px solid #1ca0a4;
+}
+.contact--inner .left p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contact--inner .right{
+    width: 55%;
+    padding-left: 20px; 
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto
+}
+.contact--inner input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    background:#f1f0f0;
+    border:none;
+    padding: 10px;
+    outline: none
+}
+.contact--inner textarea{
+    height: 100px;
+    width: 100%;
+    background: #f1f0f0;
+    border:none;
+    outline: none;
+    padding: 10px;
+}
+.contact--inner ::placeholder{
+    color:#d8d4d4;
+    font-size: 14px;
+
+}
+@media only screen and (max-width: 767px){
+    .contact--inner{
+        flex-direction: column;
+    }
+    .contact--inner .left{
+        width: 100%;
+        border:none;
+        margin-bottom: 30px;
+    }
+    .contact--inner .right{
+        width: 100%;
+        padding: 0;
+    }
+    .mainText h1{
+        font-size: 30px;
+    }
+    .headerText p{
+        font-size: 24px;
+    }
+}
+/* /end/ contact*/
