@@ -10,8 +10,10 @@
       <link rel="stylesheet" type="text/css" href="./common/css/common.css" />
       <link rel="stylesheet" type="text/css" href="./common/css/style.css" />
       <link rel="shortcut icon" href="./common/images/favicon.ico">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script type="text/javascript" src="./common/js/jquery-3.2.1.min.js"></script>
+      <link rel="stylesheet" href="./font-awesome/font-awesome.css">
+      <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+      <script src="./bootstrap/bootstrap.js"></script>
+      <script type="text/javascript" src="./common/js/jquery-3.2.1.js"></script>
       <script type="text/javascript" src="./common/js/common.js"></script>
       
    </head>
@@ -105,15 +107,39 @@
                   <div class="planItem">
                      <img src="./common/images/i1.png" alt="">
                      <div class="planItem__text">
-                        <a href="">Kế hoạch tứ kỳ</a>
+                        <a href="" data-toggle="modal" data-target="#kehoach">Kế hoạch tứ kỳ</a>
                         <span>bảo vệ</span>
+                        <div class="modal fade" id="kehoach" role="dialog">
+                              <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <p>Some text in the modal.</p>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
                      </div>
                   </div>
                   <div class="planItem">
                      <img src="./common/images/i2.png" alt="">
                      <div class="planItem__text">
-                        <a href="">Sức khỏe cá nhân</a>
+                        <a href=""data-toggle="modal" data-target="#suckhoe">Sức khỏe cá nhân</a>
                         <span>bảo vệ</span>
+                        <div class="modal fade" id="suckhoe" role="dialog">
+                              <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <p>Some text in the modal.</p>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
                      </div>
                   </div>
                   <div class="planItem">

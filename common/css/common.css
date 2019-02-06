@@ -230,7 +230,6 @@ nav{
 }
 .headerText a{
   font-size: 18px;
-  font-weight: 400;
   text-transform: uppercase;
   background: #005b82;
   padding: 20px 30px;
@@ -238,6 +237,14 @@ nav{
   margin: auto;
   display: block;
   color:white;
+  font-family: 'SF-UI-Display-Thin';
+  transition:0.5s;
+}
+
+.headerText a:hover{
+  color:white;
+  text-decoration:none;
+  background:#17589c
 }
 .headerText p{
   font-size:40px;
@@ -245,13 +252,19 @@ nav{
   margin-bottom: 20px;
   font-weight: 500;
   line-height: 1.5;
+  font-family: 'SF-UI-Display-Thin';
 }
 .logoMobi__img {
   height: 70px;
   display: block;
   margin: auto;
 }
-
+@media only screen and (max-width:767px){
+  .headerText a{
+    font-size:15px;
+    padding:12px 20px;
+  }
+}
 .logoPC img {
   height: 100px;
 }
@@ -271,7 +284,7 @@ nav{
   }
   .logoPC{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
   .logoPC img{
     height: 60px;
@@ -315,27 +328,26 @@ nav{
   background-position: 128px center;
   background-repeat: no-repeat;
   display: block;
-  /* height: 50px; */
   padding: 12px 50px;
-  font-weight: 500;
   text-decoration: none;
   color: #fff;
   transition-property: all;
   transition-duration: 0.2s;
   font-size: 13px;
+  font-family: 'SF-UI-Display-Light';
   text-transform: uppercase;
 }
 .searchBox >  ul > li > a {
   float: left;
   padding-right: 70px;
   background-color: #17589c;
+  font-family: 'SF-UI-Display-Light';
   margin-left: 5px;
   background-image: url(../images/user.png);
   background-position: 13px center;
   background-repeat: no-repeat;
   display: block;
   padding: 12px 40px 12px 50px;
-  font-weight: 500;
   text-decoration: none;
   color: #fff;
   transition-property: all;
@@ -384,6 +396,7 @@ nav{
   color:white;
   font-size:14px;
   padding:0 20px 0 30px;
+  font-family: 'SF-UI-Display-Light';
 }
 /*----------------------------------------------------------
 /mainMenu */
@@ -404,12 +417,13 @@ nav{
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 16px 0;
-  font-weight: 500;
+  font-family: 'SF-UI-Display-Thin';
 }
 .footerColumn__link{
   font-size: 16px;
   line-height: 26px;
-  font-weight: 300;
+  font-family: 'SF-UI-Display-Light';
+  color:white
 }
 .footerColumn__item{
   margin-bottom: 16px;
@@ -473,6 +487,7 @@ nav{
   font-weight: 300;
   text-align: center;
   color:#D0D0D0;
+  font-family: 'SF-UI-Display-Light';
 }
 .help{
   position: fixed;
@@ -481,8 +496,7 @@ nav{
   background-color: #17589c;
   color: #fff;
   font-size: 19px;
-  /* font-weight: bold; */
-  /* border-radius: 21px; */
+  font-family: 'SF-UI-Display-Thin';
   padding: 8.5px 69px;
   letter-spacing: 0.6px;
 }
@@ -560,9 +574,11 @@ nav{
   color:white;
   font-size: 13px;
   text-transform: uppercase;
-  padding: 12px;
-  font-weight: 500;
+  display: block;
+  height: 42px;
   margin-left: 5px;
+  font-family: 'SF-UI-Display-Light';
+  padding: 10px;
 }
 .lang:hover{
   color: #fff;
@@ -619,6 +635,7 @@ nav{
   text-align: center;
   font-weight: bold;
   font-size: 0;
+  outline: none;
 }
 
 #primary-nav-button:hover {
@@ -692,6 +709,7 @@ nav{
       margin-right: 11px;
       padding-right: 23px;
       position: relative;
+      font-family: 'SF-UI-Display-Thin';
 }
 @media (min-width:992px) and (max-width:1199px){
   #primary-nav > ul > li > a {
@@ -746,6 +764,7 @@ nav{
   color:white;
   font-size: 15px;
   position: static;
+  font-family: 'SF-UI-Display-Thin';
 }
 #primary-nav .sub-menu li {
   border-bottom: 1px solid #2f3842;
