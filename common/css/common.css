@@ -60,161 +60,10 @@ nav{
     padding:0 15px;
   }
 }
-/*start menu*/
-/*  menu mobile
----------------------------------------------------------- */
-.menuMobi {
-  position: fixed;
-  width: 100%;
-  background: #ffffff;
-  z-index: 9;
-  top: 0;
-  border-bottom: 2px solid #B2B2B2;
-}
-@media (min-width: 992px) {
-  .menuMobi {
-    display: none;
-    border: 0;
-  }
-  
-}
-/*  menu mobile
----------------------------------------------------------- */
-/* .drawerBtn
------------------------------------------------------*/
-.drawerBtn {
-  line-height: 1;
-  display: inline-block;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  width: 35px;
-  height: auto;
-  position: fixed;
-  z-index: 9999;
-  right: 20px;
-    top: 26px;
-  outline: none;
-  font-size: 14px;
-}
-.drawerBtn>span {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 13px;
-  width: 35px;
-}
-.drawerBtn .drawerBtn__icon {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 22px;
-  vertical-align: middle;
-  fill: none;
-}
-.menuMain {
-  margin-top: 40px;
-}
-.drawerBtn__icon span.black,.drawerBtn__icon--gray span{
-  background: #006df0;
-}
-.drawerBtn.is-active .drawerBtn__icon span{
-  background: #006df0;
-}
+
 .logoPC {
   width: 18%;
 }
-
-.detailMenu {
-  width: 82%;
-}
-.menuMain__sub {
-  position: absolute;
-  background: #eaeff4;
-  top: 40px;
-  width: 200px;
-  border: 1px solid #e1e5e6;
-  box-shadow: 1px 1px 3px #c9c9d4;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  transition: 0.5s all;
-}
-.menuDetail--wrapper .menuMain > .detailMenu__item:hover .menuMain__sub{
-   opacity: 1;
-   visibility:visible;
-}
-.menuMain__sub li {
-  padding: 12px;
-}
-.menuMain__sub li a{
-  font-size:14px;
-  text-transform:uppercase;
-  font-weight:500;
-  color:#005b82;
-}
-@media (min-width: 1000px) {
-  .drawerBtn{
-    display: none;
-  }
-}
-/*----------------------------------------------------------
-/ .drawerBtn */
-
-
-/* .drawerBtn__icon
------------------------------------------------------*/
-.drawerBtn__icon span {
-  position: absolute;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  background-color: #fff;
-}
-.drawerBtn__icon span:nth-child(1) {
-  top: 0;
-}
-.is-active .drawerBtn__icon span:nth-child(1) {
-  -webkit-transform: translateY(13px) translateX(0) rotate(45deg);
-  -ms-transform: translateY(13px) translateX(0) rotate(45deg);
-  transform: translateY(7px) translateX(0) rotate(45deg);
-}
-.drawerBtn__icon span:nth-child(2){
-  top: calc(50% - 1px);
-}
-.is-active .drawerBtn__icon span:nth-child(2){
-  opacity: 0;
-}
-.drawerBtn__icon span:nth-child(3) {
-  bottom: 0;
-}
-.is-active .drawerBtn__icon span:nth-child(3){
-  -webkit-transform: translateY(-13px) translateX(0) rotate(-45deg);
-  -ms-transform: translateY(-13px) translateX(0) rotate(-45deg);
-  transform: translateY(-13px) translateX(0) rotate(-45deg);
-}
-/*----------------------------------------------------------
-/ .drawerBtn__icon*/
-
-/* banner
------------------------------------------------------*/
-.banner{
-  position: relative;
-}
-.main__img img{
-  width: 100%;
-  height: 100vh;
-  display: block;
-}
-.slick-arrow{
-  display: none !important;
-}
-/*----------------------------------------------------------
-/ banner*/
 
 .header{
   background: url(../images/header-bg.png) no-repeat;
@@ -254,11 +103,6 @@ nav{
   line-height: 1.5;
   font-family: 'SF-UI-Display-Thin';
 }
-.logoMobi__img {
-  height: 70px;
-  display: block;
-  margin: auto;
-}
 @media only screen and (max-width:767px){
   .headerText a{
     font-size:15px;
@@ -277,14 +121,12 @@ nav{
   }
 
 }
-
 @media only screen and (max-width:991px){
   .searchBox{
     display: none !important; 
   }
   .logoPC{
     width: 100%;
-    /* text-align: center; */
   }
   .logoPC img{
     height: 60px;
@@ -298,27 +140,6 @@ nav{
     z-index: 222;
     box-shadow: 0px 1px 5px #51aed6;
   }
-}
-@media (max-width: 999px){
-  .mainMenu__nav{
-    display: none;
-  }
-}
-.mainMenu__parent.is-active .mainMenu__childNav {
-  display: block;
-}
-.mainMenu__childNav {
-  display: none;
-}
-@media (min-width: 1000px) {
-  .mainMenu__nav {
-    position: absolute;
-    top: auto;
-    left: 0;
-    bottom: 130px;
-    z-index: 999;
-    height: auto;
-}
 }
 .searchBox .btnSearch {
   float: right;
@@ -538,6 +359,9 @@ nav{
 }
 
 /*end footer*/
+
+
+
 .btnSearch:hover form{
   opacity: 1;
 }
@@ -546,7 +370,6 @@ nav{
   width: 280px;
   height: 38px;
   padding: 0 10px;
-  /* line-height: 48px; */
   border: 1px solid #0084B9;
   border-right: none !important;
 }
@@ -569,23 +392,8 @@ nav{
   border: 1px solid #0084B9;
   cursor: pointer;
 }
-.lang{
-  background: #17589c;
-  color:white;
-  font-size: 13px;
-  text-transform: uppercase;
-  display: block;
-  height: 42px;
-  margin-left: 5px;
-  font-family: 'SF-UI-Display-Light';
-  padding: 10px;
-}
-.lang:hover{
-  color: #fff;
-  background: #2f3842
-}
 
-
+/*main menu*/
 .cf:before, 
 .cf:after {
   content: '';
@@ -849,3 +657,37 @@ nav{
   display: flex;
   align-items: center;
 }
+
+/*end main menu*/
+
+/*language */
+.lang{
+  background: #17589c;
+  color:white;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: block;
+  height: 42px;
+  margin-left: 5px;
+  font-family: 'SF-UI-Display-Light';
+  padding: 10px;
+}
+.lang:hover{
+  color: #fff;
+  background: #2f3842
+}
+/*end language*/
+
+
+/* banner
+-----------------------------------------------------*/
+.banner{
+  position: relative;
+}
+.main__img img{
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+/*----------------------------------------------------------
+/ banner*/

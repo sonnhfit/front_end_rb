@@ -83,12 +83,6 @@ src: local('SF UI Display Light'), url('../font/sf-ui-display-thin-58646e9b26e8b
 .planItem:hover path{
     fill:white !important;
 }
-/* .plan__img {
-    height: 320px;
-    width: 20%;
-    object-fit: contain;
-    float: left;
-} */
 @media (min-width:768px) and (max-width:991px){
     .plan--wrapper{
         flex-direction: column;
@@ -185,13 +179,6 @@ src: local('SF UI Display Light'), url('../font/sf-ui-display-thin-58646e9b26e8b
     font-size: 50px;
     font-weight: 300;
     color: #006df0;
-}
-@media  only screen and (min-width:992px){
-.whyLoveMe__item:hover .whyLoveMe__text{
-    opacity: 1;
-    display: block !important;
-    color: white;
-}
 }
 @media (min-width: 768px) and (max-width:991px){
     .section__tit{
@@ -305,6 +292,13 @@ src: local('SF UI Display Light'), url('../font/sf-ui-display-thin-58646e9b26e8b
 .removeIcon{
     display: block;
 }
+@media  only screen and (min-width:992px){
+    .whyLoveMe__item:hover .whyLoveMe__text{
+        opacity: 1;
+        display: block !important;
+        color: white;
+    }
+    }
 @media only screen and (max-width:767px){
     .whyLoveMe__table{
         flex-direction: column;
